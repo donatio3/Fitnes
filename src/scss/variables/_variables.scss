@@ -1,0 +1,89 @@
+.btn__form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 270px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #20253e;
+    border: solid #20253e 1.6px;
+    cursor: pointer;
+    &:hover {
+        transition: 0.5s;
+        color:rgba(67, 210, 158, 0.9);
+        background-color:white;
+        border: white;
+    }
+    &:active {
+        
+        background-color: #20253e;
+        transition: 0,5s;
+    }
+} 
+
+
+.tabcontent__btn {
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 90px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    width: 250px;
+    color: #fff;
+    background:#43d29e;
+    &:hover {
+        transition: 0.3s;
+        color:white;
+        background-color:#42b98d;
+    }
+}
+
+.title {
+    font-size: 42px;
+    font-weight:900;
+    color: rgb(32, 37, 62);
+    text-align: center;
+}
+
+
+
+.social {
+    position: absolute;
+    top: 230px;
+    left: 839px;
+    li {
+        margin-top: 17px;
+        height: 60px;
+        width: 60px;
+        background: white ;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor:pointer;
+        transition: all 0.3s ;
+        &:hover{
+        
+            transform: scale(1.1);
+            
+        }
+    }
+}
+
+.addCardInModal {
+    background-color: #43d29e;
+    box-shadow: 0 0 40px 0 rgba(67,210,158,.34);
+    position: relative;
+    height: 130px;
+    width: 200px;
+    display: block;
+    border-radius: 12%;
+    border: #43d29e 5px solid;
+    transition: all .6s;
+    margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+.trainer {
+    &__block{
+        display: grid;  
+        grid-template-columns: 1fr 1fr;
+    }
+    &__video{
+        iframe {
+            width: 500px;
+            height: 380px;
+        }
+        
+    }
+
+    .trainer__text-title {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 50px;
+        
+    }
+
+   
+    .trainer__text-descr {
+        line-height:30.6px;
+        margin-top: 30px;
+        font-size: 18px;
+        width: 100%;
+        white-space: wrap;
+        overflow: hidden;
+        color: #787c8c  ;
+        font-weight: 400;
+        text-align: left;
+    }
+
+}
+
+

@@ -1,0 +1,271 @@
+.cards {
+    min-height: 1200px;
+    position: relative;
+    z-index: 0;    
+    padding: 60px 0 60px 0;
+    background: url(/src/img/card-Section.png) no-repeat center/cover rgba(19, 25, 37, 0.9);
+    .container {
+        position: relative;
+    }
+
+    .cards__title {
+        font-size: 42px;
+        text-align: center;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+
+        &-line {
+            width: 266px;
+            height: 16px;
+            transform: matrix(1, 0, -1, 1, -100, 6);
+            display: block;
+            background-color: rgb(67,210,158);
+            position: absolute;
+            left: 248px;
+            top: 41px;
+            z-index: -2;
+        }
+    }
+
+
+    .tab {
+        margin-top: 50px;
+
+        .next {
+            position: absolute;
+            right: 5px;
+            top: 195px;
+            background: rgba(-7,21,31,0.2);
+        
+        }
+
+        .prev {
+            background: rgba(-7,21,31,0.2);
+            height: 42px;
+            top: 195px;
+            position: absolute;
+        }
+
+
+        &__items {
+            display: flex;
+            justify-content: space-evenly;
+
+            .tab__item {
+
+                .active {
+                    background-color:rgb(67,210,158);    
+                    transform: rotate(-13deg) scale(1.2);
+                    box-shadow: 0 0 40px 0 rgba(67,210,158, 0.34);                
+                }
+
+                margin-top: 30px;
+
+                &-card {
+                    position: relative;
+                    height: 100px;
+                    width: 150px;
+                    display: block;
+                    border-radius: 12%;
+                    border: rgb(67,210,158) 5px solid;
+                    transition: all 0.6s;
+                    transform: rotate(-13deg);
+
+                
+                    .logo {
+                        color: rgb(67,210,158);
+                        font-size: 18px;
+                        font-weight: 700;
+                        margin: 5px;
+                        margin-top: 5px;
+                        
+                    }
+
+                    .name__card {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: #43d29e;
+                        text-align:center;
+                        margin-top: 15px; 
+                    }
+
+                    .line__dark{
+                        display: block;
+                        border-top: 2px solid #43d29e;
+                        height: 15px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 14px;
+                        border-bottom: 2px solid #43d29e;
+                    
+                    }  
+                }
+
+                &-descr {
+                    font-size: 18px;
+                    line-height: 14px;
+                    color: #fff;
+                    margin-top: 20px;
+                    text-align: center;
+                    font-weight: 400;
+                    margin-top: 50px;
+                }
+            }
+
+            .tab__item-card:hover{
+                background-color: #43d29e;
+                    transition: 0.5s;
+                    .logo {
+                        color: rgba(19, 25, 37, 0.9);
+                    }
+                    .name__card {
+                        color: rgba(19, 25, 37, 0.9);
+                    }
+                    .line__dark {
+                        border-top:1px solid rgba(19, 25, 37, 0.9);
+                        border-bottom: 1px solid rgba(19, 25, 37, 0.9);
+                    }
+
+            }
+
+            .default {
+                color: #43d29e;
+            }
+        }
+    }
+
+
+
+
+    .tabcontent {
+        margin-top: 62px;
+        .tabcontent__info {
+            list-style-type: none;
+            
+            img {
+                width: 20px;
+                height: 20px;
+            }
+            
+        
+            .item__benefits{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 25px;
+
+                .benefits__container {
+                    list-style-type: none;
+                    display: flex;
+                    width: 300px;
+
+                    .benefits__container-heading {
+                        margin-bottom: 10px;
+                        opacity: 0.5;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: white;
+                        line-height: 25px;
+                        font-weight: 400;
+                        display: block;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin-right:20px;
+                        margin-top:16px;
+                    }
+                }
+            } 
+            .item__benefits-header .admission {
+                display: flex;
+                justify-content: center;
+            }
+            .benefits-item__heading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                margin-bottom: 45px;
+            }
+
+            #header {
+                display: block;
+                width: 40px;
+                height: 40px;
+                margin-left: 50px;
+            }
+            
+           
+
+            .benefits__title {
+                margin-left: 10px;
+                margin-bottom: 20px;
+                margin-right: 80px;
+                color:white;
+                font-size: 16px;
+                font-weight: 800;
+            
+            }
+
+            .benefits__line {
+                display: block;
+                top: 50%;
+                height: 1px;
+                width: 380px;        
+                background: linear-gradient(90deg, transparent 50%, hsla(0, 0%, 100%, 0.2) 0) repeat;
+                background-size: 20px 1px, 100% 1px;
+                opacity: 0.5;
+            }
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .okay {
+            display: block;
+        }
+
+
+        .item__benefits-req {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            padding-right:20px ;
+            
+            .benefits__container {
+                list-style-type: none ;
+                display: flex;
+
+                img {
+                    margin-right: 16px;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: white;
+                    line-height: 25px;
+                    font-weight: 400;
+                }
+
+                
+            }
+            .border  {
+                grid-column-start:3 ;
+            }
+            
+
+            
+        }
+    }
+
+}

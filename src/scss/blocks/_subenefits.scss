@@ -1,0 +1,39 @@
+.subenefits {
+    background: url('/src/img/div.brz-bg-image.png') no-repeat (center/cover);
+    min-height: 320px;
+    z-index: 1;
+    position: relative;
+    .container {
+        padding: 75px 15px 75px 15px;
+    }
+    .brz {
+        display: block;
+        min-height:320px;
+        width: 100%;
+        background-color:rgba(67, 210, 158, 0.9);
+        z-index: -1;
+        position: absolute;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+
+        .number {
+            font-size: 70px;
+            font-weight: 800;
+            color: white;
+            text-align: center;
+        }
+
+        .descr {
+            color:white;
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 25px;
+            margin-top: 12px;
+        }
+    }
+
+
+}

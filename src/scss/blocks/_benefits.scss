@@ -1,0 +1,44 @@
+.benefits {
+    margin-top: 94px;
+    min-height: 760px;
+    background: linear-gradient(to right, rgba(32, 37, 62, 0.95) 54%, transparent 80%),url("/src/img/Section.png") no-repeat center/cover;
+    padding-top: 90px;
+    padding-left: 90px;
+    
+    &__subtitle {
+        color:rgb(120, 124, 140);
+        font-size:17px;
+        font-weight: 700;
+        padding-bottom: 5px;
+
+    }
+
+    &__title {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 50px;
+        color:white;
+        display: inline;
+    }
+
+    &__descr {
+        color :rgb(120, 124, 140);
+        font-size :18px;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__plus {
+        &-item {
+            display: flex;
+            .text {
+                font-size: 18px;
+                font-weight: 900;
+                color: rgba(255, 255, 255, .7);
+                order: 1;
+                margin-left: 15px ;
+            }
+        }
+    }
+}
